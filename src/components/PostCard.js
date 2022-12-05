@@ -18,6 +18,11 @@ function PostCard({
   return (
     <Card fluid>
       <Card.Content>
+        <Image
+          floated="right"
+          size="mini"
+          src="https://pbs.twimg.com/profile_images/971619290523848704/TpAHWg7o_400x400.jpg"
+        />
         <Card.Header>{username}</Card.Header>
         <Card.Meta as={Link} to={`/posts/${id}`}>
           {moment(createdAt).fromNow(true)}

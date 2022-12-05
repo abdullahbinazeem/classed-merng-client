@@ -64,7 +64,13 @@ function SinglePost(props) {
     postMarkup = (
       <Grid>
         <Grid.Row>
-          <Grid.Column width={2}></Grid.Column>
+          <Grid.Column width={2}>
+            <Image
+              src="https://pbs.twimg.com/profile_images/971619290523848704/TpAHWg7o_400x400.jpg"
+              size="small"
+              float="right"
+            />
+          </Grid.Column>
           <Grid.Column width={10}>
             <Card fluid>
               <Card.Content>
