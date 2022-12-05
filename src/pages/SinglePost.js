@@ -66,7 +66,7 @@ function SinglePost(props) {
         <Grid.Row>
           <Grid.Column width={2}>
             <Image
-              src="https://www.citypng.com/public/uploads/preview/profile-user-round-red-icon-symbol-download-png-11639594337tco5j3n0ix.png"
+              src="https://i.pinimg.com/736x/d0/06/af/d006af4e980707901a55c3c0f29f0dd9.jpg"
               size="small"
               float="right"
             />
