@@ -7,35 +7,42 @@ import PostCard from "../components/PostCard";
 import PostForm from "../components/PostForm";
 import { FETCH_POSTS_QUERY } from "../util/graphql";
 
+import ActGroup from "../components/ActGroup";
+import AutoBiographies from "../components/AutoBiographies";
+
 function Home() {
   const { user } = useContext(AuthContext);
   const { loading, data: getPosts } = useQuery(FETCH_POSTS_QUERY);
 
   return (
-    <Grid columns="three" divided>
-      <Grid.Row className="page-title">
-        <h1>Collaboration</h1>
-      </Grid.Row>
-      <Grid.Row>
-        {user && (
-          <Grid.Column>
-            <PostForm />
-          </Grid.Column>
-        )}
-        {loading ? (
-          <h1>Loading posts..</h1>
-        ) : (
-          <Transition.Group>
-            {getPosts &&
-              getPosts.getPosts.map((post) => (
-                <Grid.Column key={post.id} style={{ marginBottom: 20 }}>
-                  <PostCard post={post} />
-                </Grid.Column>
-              ))}
-          </Transition.Group>
-        )}
-      </Grid.Row>
-    </Grid>
+    <>
+      <ActGroup />
+      <AutoBiographies />
+      <Grid columns="three" doubling divided>
+        <Grid.Row className="page-title">
+          <h1>Collaboration</h1>
+        </Grid.Row>
+        <Grid.Row>
+          {user && (
+            <Grid.Column>
+              <PostForm />
+            </Grid.Column>
+          )}
+          {loading ? (
+            <h1>Loading posts..</h1>
+          ) : (
+            <Transition.Group>
+              {getPosts &&
+                getPosts.getPosts.map((post) => (
+                  <Grid.Column key={post.id} style={{ marginBottom: 20 }}>
+                    <PostCard post={post} />
+                  </Grid.Column>
+                ))}
+            </Transition.Group>
+          )}
+        </Grid.Row>
+      </Grid>
+    </>
   );
 }
 

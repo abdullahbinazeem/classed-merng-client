@@ -22,12 +22,16 @@ function MenuBar() {
     </Menu>
   ) : (
     <Menu pointing secondary size="massive" color="red">
-      <Menu.Item>
-        <h3 className="logo">MyMacbeth</h3>
-      </Menu.Item>
       <Menu.Item
         name="home"
         active={activeItem === "home"}
+        onClick={handleItemClick}
+        as={Link}
+        to="/"
+      />
+      <Menu.Item
+        name="resources"
+        active={activeItem === "resources"}
         onClick={handleItemClick}
         as={Link}
         to="/"

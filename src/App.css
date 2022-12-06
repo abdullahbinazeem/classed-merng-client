@@ -19,3 +19,15 @@
   color: red;
   font-size: 1.2em;
 }
+
+.section {
+  margin: 5rem auto !important;
+}
+
+.acts .title {
+}
+
+.autobio .cards {
+  padding: 2em 1em !important;
+  margin: 0 1em 4em !important;
+}
