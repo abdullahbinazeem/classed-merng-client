@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Card, Image, Icon, Button, Grid, Header } from "semantic-ui-react";
 
 const ActGroup = () => (
@@ -25,11 +26,12 @@ const ActGroup = () => (
         <Card.Content>
           <Card.Header>Act 1</Card.Header>
           <Card.Description>
-            Daniel is a comedian living in Nashville.
           </Card.Description>
         </Card.Content>
         <Card.Content>
-          <Button>Learn</Button>
+          <Button as={Link} to="/scenesummaries/act1">
+            Learn
+          </Button>
         </Card.Content>
         <Card.Content extra>
           <a>
@@ -49,16 +51,17 @@ const ActGroup = () => (
         <Card.Content>
           <Card.Header>Act 2</Card.Header>
           <Card.Description>
-            Daniel is a comedian living in Nashville.
           </Card.Description>
         </Card.Content>
         <Card.Content>
-          <Button>Learn</Button>
+          <Button as={Link} to="/scenesummaries/act2">
+            Learn
+          </Button>
         </Card.Content>
         <Card.Content extra>
           <a>
             <Icon name="universal access" />
-            Scenes 1-7
+            Scenes 1-4
           </a>
         </Card.Content>
       </Card>
@@ -73,16 +76,17 @@ const ActGroup = () => (
         <Card.Content>
           <Card.Header>Act 3</Card.Header>
           <Card.Description>
-            Daniel is a comedian living in Nashville.
           </Card.Description>
         </Card.Content>
         <Card.Content>
-          <Button>Learn</Button>
+          <Button as={Link} to="/scenesummaries/act3">
+            Learn
+          </Button>
         </Card.Content>
         <Card.Content extra>
           <a>
             <Icon name="universal access" />
-            Scenes 1-7
+            Scenes 1-6
           </a>
         </Card.Content>
       </Card>
@@ -97,16 +101,17 @@ const ActGroup = () => (
         <Card.Content>
           <Card.Header>Act 4</Card.Header>
           <Card.Description>
-            Daniel is a comedian living in Nashville.
           </Card.Description>
         </Card.Content>
         <Card.Content>
-          <Button>Learn</Button>
+          <Button as={Link} to="/scenesummaries/act4">
+            Learn
+          </Button>
         </Card.Content>
         <Card.Content extra>
           <a>
             <Icon name="universal access" />
-            Scenes 1-7
+            Scenes 1-3
           </a>
         </Card.Content>
       </Card>
@@ -121,11 +126,12 @@ const ActGroup = () => (
         <Card.Content>
           <Card.Header>Act 5</Card.Header>
           <Card.Description>
-            Daniel is a comedian living in Nashville.
           </Card.Description>
         </Card.Content>
         <Card.Content>
-          <Button>Learn</Button>
+          <Button as={Link} to="/scenesummaries/act5">
+            Learn
+          </Button>
         </Card.Content>
         <Card.Content extra>
           <a>

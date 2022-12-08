@@ -7,17 +7,12 @@ import PostCard from "../components/PostCard";
 import PostForm from "../components/PostForm";
 import { FETCH_POSTS_QUERY } from "../util/graphql";
 
-import ActGroup from "../components/ActGroup";
-import AutoBiographies from "../components/AutoBiographies";
-
 function Home() {
   const { user } = useContext(AuthContext);
   const { loading, data: getPosts } = useQuery(FETCH_POSTS_QUERY);
 
   return (
     <>
-      <ActGroup />
-      <AutoBiographies />
       <Grid columns="three" doubling divided>
         <Grid.Row className="page-title">
           <h1>Collaboration</h1>
