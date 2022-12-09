@@ -1,9 +1,19 @@
 import React from "react";
 import { Button, Card, Header, Container, Divider } from "semantic-ui-react";
+import { Link } from "react-router-dom";
 
 function Act4ScenePage() {
   return (
-    <Container text>
+    <Container text style={{ padding: "2em 0" }}>
+      <Link to="/resources">
+        <Button
+          content="Back"
+          icon="book"
+          size="big"
+          color="red"
+          style={{ padding: "1em 3vw" }}
+        />
+      </Link>
       <Header as="h1" style={{ margin: "2em 0" }}>
         Act IV
       </Header>

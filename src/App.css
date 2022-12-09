@@ -1,3 +1,6 @@
+* {
+  scroll-behavior: smooth;
+}
 .page-title {
   display: block !important;
   text-align: center;
@@ -10,10 +13,6 @@
   margin: auto;
 }
 
-.ui.teal.button:focus,
-.ui.teal.buttons .button:focus {
-  background-color: red;
-}
 
 .logo {
   color: red;
@@ -30,4 +29,24 @@
 .autobio .cards {
   padding: 2em 1em !important;
   margin: 0 1em 4em !important;
+}
+
+.watermark {
+  position: fixed;
+  top: 10vh;
+  height: 80vh;
+  z-index: 1000;
+  pointer-events: none;
+  opacity: .1;
+}
+
+@media only screen and (max-width: 700px) {
+  *{
+    font-size: 14px;
+  }
+  .watermark {
+    right: -25vw;
+    margin: 0 auto;
+    width: 150vw;
+  }
 }

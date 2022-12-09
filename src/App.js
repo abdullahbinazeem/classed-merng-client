@@ -29,6 +29,11 @@ function App() {
       <Router>
         <Container>
           <MenuBar />
+          <img
+            src={require("./img/bg.svg").default}
+            className="watermark"
+            alt=""
+          />
           <Routes>
             <Route exact path="/resources" element={<Resources />} />
             <Route
