@@ -56,9 +56,9 @@ function Home() {
         <Grid.Row>
           {!user && (
             <Grid.Column>
-              <Card fluid > 
+              <Card fluid>
                 <Card.Content>
-                  <Card.Header center style={{ padding: "1em 0" }}>
+                  <Card.Header style={{ padding: "1em 0" }}>
                     You Don't Have an Account Yet !
                   </Card.Header>
                   <Link to="/login">
@@ -66,7 +66,7 @@ function Home() {
                       content="Login"
                       icon="twitter"
                       size="big"
-                      color="teal "
+                      color="teal"
                       stretched
                     />
                   </Link>
@@ -96,7 +96,11 @@ function Home() {
             <Transition.Group>
               {getPosts &&
                 getPosts.getPosts.map((post) => (
-                  <Grid.Column key={post.id} style={{ marginBottom: 20 }}>
+                  <Grid.Column
+                    key={post.id}
+                    style={{ marginBottom: 20 }}
+                    stretched
+                  >
                     <PostCard post={post} />
                   </Grid.Column>
                 ))}
